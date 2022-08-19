@@ -1,5 +1,6 @@
 package com.gamblingsimulatorprogram;
 
+import static com.gamblingsimulatorprogram.GamblingSimulator.askUser;
 import static com.gamblingsimulatorprogram.GamblingSimulator.gambler;
 
 public class GamblingSimulatorMain {
@@ -9,6 +10,6 @@ public class GamblingSimulatorMain {
         System.out.println("Welcome to Gambling Simulator Program");
         System.out.println("-------------------------------------");
            gambler();
-
+           askUser();
     }
 }
