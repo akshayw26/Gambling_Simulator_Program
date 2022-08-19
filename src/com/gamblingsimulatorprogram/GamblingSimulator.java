@@ -1,5 +1,7 @@
 package com.gamblingsimulatorprogram;
 
+import java.util.Scanner;
+
 public class GamblingSimulator {
 
     static int stake = 100;
@@ -36,5 +38,22 @@ public class GamblingSimulator {
         System.out.println("Total wins in month : " +wins+ " Stake won in month : $" +stakeWin);
         System.out.println("Total loses in month : " +lose+ " Stake lose in month $: " +stakeLose);
 
+    }
+        static void askUser() {
+
+        System.out.println("press 1 If you like to play again" );
+        System.out.println("press 2 If you would like to stop gambling");
+
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+
+        switch (number) {
+        case 1:
+            gambler();
+            break;
+        case 2:
+            System.out.println("Exit");
+
+        }
     }
 }
